@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*
+*默认样式
+*/
+body{
+    font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+    color:#333333;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+ol{
+    float: left;
+	text-decoration:none;
+}
+a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+/*
+*公共样式
+*/
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+
+.pos-rel{
+	position: relative;
+}
+.font-size-18{
+	font-size: 18px;
+}
+.font-size-12{
+	font-size: 12px;
+}
+.font-size-14{ 
+	font-size: 14px;
+}
+.col-fff{
+	color: #fff;
+}
+.mar-t-b-20{
+	margin: 20px 0;
+}
+.pad-b-20{
+	padding-bottom: 20px;
+}
+
+/*
+*具体样式
+*/
+.tab-h2{
+	padding-bottom: 20px;
+}
+.input{
+	color: #fff;
+	border: 1px solid #fff;
+	background: #94c949;
+	outline:none;
+}
+
+.copyright{
+	position: absolute;
+	top: 30px;
+}
+.logo{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.logo img{
+	width: 200px;
+}
+
+/*
+*媒体查询
+*/
+@media (max-width: 479px) {
+	.tab-h2 {
+		font-size:16px;
+	}
+	.tab-h6 {
+		font-size: 10px;
+	}
+	.logo img{
+		width: 100px;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+	.tab-h2 {
+		font-size:18px;
+	}
+	.tab-h6 {
+		font-size: 12px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.tab-h2 {
+		font-size:24px;
+	}
+	.tab-h6 {
+		font-size: 14px;
+		margin-top: 40px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.tab-h2 {
+		font-size:30px;
+	}
+	.tab-h6 {
+		font-size: 16px;
+		margin-top: 40px;
+	}
+}
+@media (min-width: 1200px) {
+	.tab-h2 {
+		font-size:40px;
+	}
+	.tab-h6 {
+		font-size: 20px;
+		margin-top: 40px;
+	}
+}

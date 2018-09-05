@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+	 <link rel="stylesheet" href="./css/stylesheet.css"/>
+  <title>Polo</title>
+ </head>
+ <body>
+ 	<header id="header">
+		<div class="bg-container"></div>
+		<div class="container">
+			<div class="logo-p">
+				<img src="./images/logo.png" alt=""/>
+			</div>
+			<div class="logo-next">
+				<a href="#main">scroll</a>
+			</div>
+		</div>
+ 	</header>
+	<main id="main">
+		<div class="wrapper-content">
+			<p class="tab-h2">Set amongst <span class="underline">Molonglo Valley</span>'s premium suburb of <span class="underline">Denman Prospect</span>, Polo offerts a diverse range of north-facing residences boasting Expansive <span class="underline">picturesque views</span>.</p>
+			<p class="tab-h6"><a href="#footer">Register your interest &nbsp;&nbsp;↴</a></p>
+		</div>
+	</main>
+	<footer id="footer">
+		<div class="wrapper-footer">
+			<div class="row wrapper-intro">
+				<div class="col-xs-12 col-sm-6 intro">
+					Neighbouring Denman Village Shops and surrounded by parks and open spaces,residents at Polo won't need to travel far for the important things in life. With close proximity to Canberra's main hubs, you'll be afforded a convenient lifestyle option in a remarkable suburban location.
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<p class="intro">You’ll be spoilt for choice with a collection of 1, 1 + study and 2 bedroom apartments, as well as 2 and 3 bedroom townhouses. </p>
+					<p class="detail">Interested in learning more about Polo and all that Denman Prospect has to offer?</p>
+					<p class="detail">Simply complete the form below and we’ll contact you prior to the formal release</p>
+				</div>
+			</div>
+			<form action="">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-fff users">
+						<input type="text" class="input" placeholder="Name">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-fff">
+						<span class="pull-down"></span>
+						<select class="input">
+							<option>Interested In</option>
+							<option>Interested In</option>
+							<option>Interested In</option>
+							<option>Interested In</option>
+							<option>Interested In</option>
+							<option>Interested In</option>
+						</select>
+					</div>
+				</div>
+				<div class="mar-t-16 mar-b-12">
+					<textarea class="area input" rows="3" placeholder="Comments/Questions"></textarea>
+				</div>
+				<div class="checkone">
+					<label>
+						<input type="checkbox" id="protocol">
+						<label for="protocol"></label>
+						I agree to the <a href="" class="agree">terms and conditions</a>
+					</label>
+				</div>
+				<div class="mar-b-16 mar-t-12">
+					<input class="sub input" type="submit" value="Submit">
+				</div>
+			</form>
+			<div class="bottom">
+				<div class="flex copyright">© 2017 Independent Projects</div>
+				<div class="flex logo-b">
+					<img src="./images/logo_one.png" alt=""/>
+					<img src="./images/logo_two.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./js/jquery.js"></script>
+	<script>
+		$(function(){
+			$('a[href*=#],area[href*=#]').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var $target = $(this.hash);
+					$target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+					if ($target.length) {
+						var targetOffset = $target.offset().top;
+						$('html,body').animate({
+									scrollTop: targetOffset
+								},
+								500);
+						return false;
+					}
+				}
+			});
+		})
+	</script>
+ </body>
+</html>
