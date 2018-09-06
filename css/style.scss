@@ -30,10 +30,7 @@ img{
 textarea{
   resize: none;
 }
-select{
-  -webkit-appearance: none;
-  appearance: none;
-}
+
 input::-moz-placeholder {
   color: #daecbf;
 }
@@ -58,6 +55,9 @@ textarea::-webkit-input-placeholder {
 .col-fff{
   color: #fff;
 }
+.col-gray{
+  color: gray;
+}
 .mar-t-12{
   margin-top: 12px;
 }
@@ -76,20 +76,20 @@ textarea::-webkit-input-placeholder {
 .underline{
   display: inline-block;
   border-bottom: 3px solid #94c949;
-  @media (max-width: 479px) {
-    line-height: 15px;
+  @media (min-width: 1200px) {
+    line-height: 42px;
   }
-  @media (min-width: 480px) and (max-width: 767px) {
-    line-height: 16px;
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    line-height: 24px;
-  }
-  @media (min-width: 992px) and (max-width: 1199px) {
+  @media (max-width: 1199px) {
     line-height: 30px;
   }
-  @media (min-width: 1200px) {
-    line-height: 48px;
+  @media (max-width: 991px) {
+    line-height: 24px;
+  }
+  @media (max-width: 767px) {
+    line-height: 16px;
+  }
+  @media (max-width: 479px) {
+    line-height: 15px;
   }
 }
 /*
@@ -97,7 +97,7 @@ textarea::-webkit-input-placeholder {
 */
 #header{
   .bg-container{
-    background-image: url('../images/bg-logo.png');
+    background-image: url('../images/bg_logo.png');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -110,7 +110,7 @@ textarea::-webkit-input-placeholder {
     height: 100vh;
     text-align: center;
   }
-  .logo-p{
+  .logo{
     position: absolute;
     top: 44%;
     left: 50%;
@@ -135,12 +135,9 @@ textarea::-webkit-input-placeholder {
       font-weight: bold;
       text-decoration: none;
       color: #fff;
+      transition: All 0.2s ease-in-out;
       &:hover{
         color: #94c949;
-        transition: All 0.3s ease-in-out;
-        -webkit-transition: All 0.3s ease-in-out;
-        -moz-transition: All 0.3s ease-in-out;
-        -o-transition: All 0.3s ease-in-out;
       }
     }
     a:after{
@@ -154,98 +151,101 @@ textarea::-webkit-input-placeholder {
   }
 }
 #main{
-  @media (max-width: 479px) {
-    padding: 70px 0 50px;
+  @media (min-width: 1200px) {
+    padding: 210px 0 158px;
   }
-  @media (min-width: 480px) and (max-width: 767px) {
-    padding: 100px 0 60px;
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    padding: 120px 0 70px;
-  }
-  @media (min-width: 992px) and (max-width: 1199px) {
+  @media (max-width: 1199px) {
     padding: 140px 0 100px;
   }
-  @media (min-width: 1200px) {
-    padding: 184px 0 122px;
+  @media (max-width: 991px) {
+    padding: 120px 0 70px;
+  }
+  @media (max-width: 767px) {
+    padding: 100px 0 60px;
+  }
+  @media (max-width: 479px) {
+    padding: 70px 0 50px;
   }
   .wrapper-content{
     max-width: 856px;
     width: 90%;
     margin: 0 auto;
     .tab-h2{
-      font-family: "Circular Book";
+      font-family: "Circular-Book";
       color: #000;
-      @media (max-width: 479px) {
-        font-size:16px;
-        line-height: 30px;
-      }
-      @media (min-width: 480px) and (max-width: 767px) {
-        font-size:18px;
-        line-height: 40px;
-      }
-      @media (min-width: 768px) and (max-width: 991px) {
-        font-size:24px;
-        line-height: 46px;
-      }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        font-size:30px;
-        line-height: 56px;
-      }
+      letter-spacing: 0.4px;
       @media (min-width: 1200px) {
         font-size:48px;
         line-height: 60px;
       }
+      @media (max-width: 1199px) {
+        font-size:30px;
+        line-height: 56px;
+      }
+      @media (max-width: 991px) {
+        font-size:24px;
+        line-height: 46px;
+      }
+      @media (max-width: 767px) {
+        font-size:18px;
+        line-height: 40px;
+      }
+      @media (max-width: 479px) {
+        font-size:16px;
+        line-height: 30px;
+      }
     }
     .tab-h6{
-      font-family: "Circular Book";
+      font-family: "Circular-Book";
       color: #000;
+      letter-spacing: 0.4px;
+      @media (min-width: 1200px) {
+        font-size: 24px;
+        margin-top: 66px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 16px;
+        margin-top: 40px;
+      }
+      @media (max-width: 991px) {
+        font-size: 14px;
+        margin-top: 40px;
+      }
+      @media (max-width: 767px) {
+        font-size: 12px;
+        margin-top: 30px;
+      }
       @media (max-width: 479px) {
         font-size: 10px;
         margin-top: 25px;
       }
-      @media (min-width: 480px) and (max-width: 767px) {
-        font-size: 12px;
-        margin-top: 30px;
-      }
-      @media (min-width: 768px) and (max-width: 991px) {
-        font-size: 14px;
-        margin-top: 40px;
-      }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        font-size: 16px;
-        margin-top: 40px;
-      }
-      @media (min-width: 1200px) {
-        font-size: 24px;
-        margin-top: 70px;
-      }
-      a:hover{
-        color: #94c949;
-        transition: All 0.3s ease-in-out;
-        -webkit-transition: All 0.3s ease-in-out;
-        -moz-transition: All 0.3s ease-in-out;
-        -o-transition: All 0.3s ease-in-out;
+      a{
+        color: #000;
+        text-decoration: none;
+        transition: All 0.2s ease-in-out;
+        &:hover{
+          color: #94c949;
+        }
       }
     }
   }
 }
 #footer{
   background:#94c949;
-  @media (max-width: 479px) {
-    padding: 50px 0 30px;
+  @media (min-width: 1200px) {
+    padding: 120px 0 195px;
   }
-  @media (min-width: 480px) and (max-width: 767px) {
-    padding: 80px 0 40px;
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    padding: 120px 0 80px;
-  }
-  @media (min-width: 992px) and (max-width: 1199px) {
+  @media (max-width: 1199px) {
     padding: 140px 0 100px;
   }
-  @media (min-width: 1200px) {
-    padding: 210px 0 138px;
+  @media (max-width: 991px) {
+    padding: 120px 0 80px;
+  }
+  @media (max-width: 767px) {
+    padding: 80px 0 40px;
+  }
+  @media (max-width: 479px) {
+    padding: 50px 0 30px;
   }
   .wrapper-footer{
     max-width: 856px;
@@ -258,43 +258,45 @@ textarea::-webkit-input-placeholder {
       line-height: 32px;
       color: #fff;
       padding-bottom: 20px;
-      font-family: "Circular Book";
-      @media (max-width: 479px) {
-        font-size:16px;
-      }
-      @media (min-width: 480px) and (max-width: 767px) {
-        font-size:18px;
-      }
-      @media (min-width: 768px) and (max-width: 991px) {
-        font-size:20px;
-      }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        font-size:22px;
-      }
+      font-family: "Circular-Book";
+      letter-spacing: 0.4px;
       @media (min-width: 1200px) {
         font-size:24px;
+      }
+      @media (max-width: 1199px) {
+        font-size:22px;
+      }
+      @media (max-width: 991px) {
+        font-size:20px;
+      }
+      @media (max-width: 767px) {
+        font-size:18px;
+      }
+      @media (max-width: 479px) {
+        font-size:16px;
       }
     }
     .detail{
       color: #fff;
-      font-family: "Circular Book";
-      @media (max-width: 479px) {
-        font-size:11px;
-      }
-      @media (min-width: 480px) and (max-width: 767px) {
-        font-size:12px;
-      }
-      @media (min-width: 768px) and (max-width: 991px) {
-        font-size:14px;
-      }
-      @media (min-width: 992px) and (max-width: 1199px) {
-        font-size:16px;
-      }
+      font-family: "Circular-Book";
+      line-height: 26px;
+      padding-bottom: 10px;
+      letter-spacing: 0.4px;
       @media (min-width: 1200px) {
         font-size:18px;
       }
-      line-height: 26px;
-      padding-bottom: 10px;
+      @media (max-width: 1199px) {
+        font-size:16px;
+      }
+      @media (max-width: 991px) {
+        font-size:14px;
+      }
+      @media (max-width: 767px) {
+        font-size:12px;
+      }
+      @media (max-width: 479px) {
+        font-size:11px;
+      }
     }
   }
   form{
@@ -308,13 +310,21 @@ textarea::-webkit-input-placeholder {
       background: #94c949;
       outline:none;
     }
+    .select{
+      color: #daecbf;
+      -webkit-appearance: none;
+      appearance: none;
+      .opts{
+        color: #fff;
+      }
+    }
     .users{
       @media(max-width: 767px) {
         margin-bottom: 16px;
       }
     }
     .pull-down{
-      background-image: url("../images/pull-down.png");
+      background-image: url("../images/pull_down.png");
       width: 13px;
       height: 12px;
       position: absolute;
@@ -340,6 +350,12 @@ textarea::-webkit-input-placeholder {
       content:"\2713";
       color:#fff;
     }
+    .focus{
+      transition: All 0.2s ease-in-out;
+    }
+    .focus:hover, .focus:focus{
+      box-shadow: 0px 0px 6px #fff;
+    }
     #protocol{
       display: none;
     }
@@ -351,24 +367,18 @@ textarea::-webkit-input-placeholder {
     .agree{
       color: #fff;
       text-decoration: underline;
+      transition: All 0.2s ease-in-out;
     }
     .agree:hover{
-      color: #337ab7;
-      transition: All 0.2s ease-in-out;
-      -webkit-transition: All 0.2s ease-in-out;
-      -moz-transition: All 0.2s ease-in-out;
-      -o-transition: All 0.2s ease-in-out;
+      color: #000;
     }
     .sub{
       width: 115px;
+      transition: All 0.2s ease-in-out;
     }
     .sub:hover{
       background: #fff;
       color: #94c949;
-      transition: All 0.2s ease-in-out;
-      -webkit-transition: All 0.2s ease-in-out;
-      -moz-transition: All 0.2s ease-in-out;
-      -o-transition: All 0.2s ease-in-out;
     }
   }
   .bottom{
@@ -390,14 +400,14 @@ textarea::-webkit-input-placeholder {
           margin-right: 64px;
         }
       }
+      @media (min-width: 479px) and (max-width: 767px) {
+        img{
+          width: 40%;
+        }
+      }
       @media (max-width: 479px) {
         img{
           width: 35%;
-        }
-      }
-      @media (min-width: 480px) and (max-width: 767px) {
-        img{
-          width: 40%;
         }
       }
     }
